@@ -4,75 +4,148 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gonçalo | Portfólio Profissional</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS adicional -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Header / Menu Fixo -->
-  <header class="header">
-    <img src="images/logo.png" alt="Logo Gonçalo IT" class="logo">
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#tecnicas">Técnicas</a></li>
-        <li><a href="#marketing">Marketing</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Navbar fixa -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Logo Gonçalo IT" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tecnicas">Técnicas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#marketing">Marketing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Sobre mim -->
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Profissional multidisciplinar com experiência em IT, marketing e vendas, especializado em soluções tecnológicas, design 3D e otimização de processos.</p>
+  <!-- Sobre Mim -->
+  <section id="sobre" class="py-5 mt-5 bg-light">
+    <div class="container">
+      <h2 class="text-primary">Sobre Mim</h2>
+      <p class="lead">Profissional multidisciplinar com experiência em IT, marketing e vendas, especializado em soluções tecnológicas, design 3D e otimização de processos.</p>
+    </div>
   </section>
 
   <!-- Competências Técnicas -->
-  <section id="tecnicas">
-    <h2>Competências Técnicas</h2>
-    <ul>
-      <li><strong>Suporte IT N1 / N2:</strong> Troubleshooting, Helpdesk</li>
-      <li><strong>Sistemas:</strong> Windows, Linux, macOS</li>
-      <li><strong>Redes:</strong> Active Directory, DNS, DHCP, VPN</li>
-      <li><strong>Ferramentas:</strong> Jira, Zendesk, Microsoft 365, Google Workspace</li>
-      <li><strong>Design & 3D:</strong> Adobe, FreeCAD</li>
-    </ul>
+  <section id="tecnicas" class="py-5">
+    <div class="container">
+      <h2 class="text-primary mb-4">Competências Técnicas</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100 text-bg-dark">
+            <div class="card-body">
+              <h5 class="card-title">IT / Suporte</h5>
+              <p class="card-text">Suporte N1 / N2, Troubleshooting, Helpdesk</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-bg-dark">
+            <div class="card-body">
+              <h5 class="card-title">Sistemas</h5>
+              <p class="card-text">Windows, Linux, macOS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-bg-dark">
+            <div class="card-body">
+              <h5 class="card-title">Redes & Ferramentas</h5>
+              <p class="card-text">Active Directory, DNS, DHCP, VPN, Jira, Zendesk, M365, Google Workspace</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Marketing & Vendas -->
-  <section id="marketing">
-    <h2>Marketing & Vendas</h2>
-    <ul>
-      <li><strong>SEO:</strong> Otimização de motores de busca</li>
-      <li><strong>Campanhas:</strong> Planeamento e execução</li>
-      <li><strong>Ferramentas:</strong> Google Analytics, Google Ads, CRM</li>
-      <li><strong>Vendas:</strong> Estratégias B2B e B2C</li>
-    </ul>
+  <section id="marketing" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-primary mb-4">Marketing & Vendas</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100 text-bg-dark">
+            <div class="card-body">
+              <h5 class="card-title">SEO</h5>
+              <p class="card-text">Otimização de motores de busca e campanhas digitais</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-bg-dark">
+            <div class="card-body">
+              <h5 class="card-title">Ferramentas</h5>
+              <p class="card-text">Google Analytics, Google Ads, CRM</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-bg-dark">
+            <div class="card-body">
+              <h5 class="card-title">Vendas</h5>
+              <p class="card-text">Estratégias B2B e B2C</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Projetos -->
-  <section id="projetos">
-    <h2>Projetos / Portfólio</h2>
-    <p>Exemplos de trabalhos, design 3D, modelação e iniciativas de marketing digital.</p>
+  <!-- Projetos / Portfólio -->
+  <section id="projetos" class="py-5">
+    <div class="container">
+      <h2 class="text-primary mb-4">Projetos / Portfólio</h2>
+      <p>Exemplos de trabalhos, modelação 3D e campanhas de marketing digital.</p>
+    </div>
   </section>
 
   <!-- Contacto -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form action="https://formspree.io/f/xkoogqoj" method="POST">
-      <input type="text" name="name" placeholder="Nome" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <textarea name="message" placeholder="Mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-      <p id="success-msg">Mensagem enviada com sucesso!</p>
-    </form>
+  <section id="contacto" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-primary mb-4">Contacto</h2>
+      <form action="https://formspree.io/f/xkoogqoj" method="POST" class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" name="name" placeholder="Nome" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" name="email" placeholder="Email" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" name="message" placeholder="Mensagem" rows="5" required></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <p id="success-msg" class="text-success mt-2">Mensagem enviada com sucesso!</p>
+        </div>
+      </form>
+    </div>
   </section>
 
-  <!-- Script Formspree -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Formspree JS -->
   <script>
     const form = document.querySelector('form');
     const successMsg = document.getElementById('success-msg');
+    successMsg.style.display = 'none';
 
     form.addEventListener('submit', function(e) {
       e.preventDefault();
