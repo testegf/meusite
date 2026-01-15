@@ -4,23 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gonçalo | Portfolio Profissional</title>
-  
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  
   <!-- CSS adicional -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body id="page-top">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo Gonçalo IT" height="50"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand" href="#page-top">
+        <img src="images/logo.png" alt="Logo Gonçalo" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
           <li class="nav-item"><a class="nav-link" href="#tecnicas">Técnicas</a></li>
@@ -33,29 +35,30 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero text-center d-flex align-items-center justify-content-center" id="home">
-    <div class="container">
-      <h1 class="display-4 text-white">Gonçalo</h1>
-      <p class="lead text-white mb-4">Profissional multidisciplinar em IT, Marketing e Vendas</p>
-      <a href="#contacto" class="btn btn-primary btn-lg">Contacto</a>
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column justify-content-center" style="min-height:100vh">
+      <img src="images/logo.png" alt="Logo Gonçalo" class="mb-3" height="120">
+      <h1 class="masthead-heading mb-3">Gonçalo</h1>
+      <p class="masthead-subheading mb-3">Profissional em IT, Marketing e Vendas</p>
+      <a class="btn btn-lg btn-light" href="#contacto">Contacto</a>
     </div>
-  </section>
+  </header>
 
   <!-- Sobre Mim -->
-  <section id="sobre" class="py-5 bg-light">
+  <section id="sobre" class="py-5">
     <div class="container">
-      <h2 class="text-primary mb-4">Sobre Mim</h2>
-      <p>Profissional com experiência em IT, marketing digital e vendas. Especialista em soluções tecnológicas, design 3D, SEO e estratégias comerciais.</p>
+      <h2 class="text-center text-primary mb-4">Sobre Mim</h2>
+      <p class="text-center">Profissional multidisciplinar com experiência em IT, marketing digital e vendas. Especialista em soluções tecnológicas, design 3D, SEO e estratégias comerciais.</p>
     </div>
   </section>
 
   <!-- Competências Técnicas -->
-  <section id="tecnicas" class="py-5">
+  <section id="tecnicas" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-primary mb-4 text-center">Competências Técnicas</h2>
+      <h2 class="text-center text-primary mb-4">Competências Técnicas</h2>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card shadow h-100 hover-card">
+          <div class="card shadow hover-card h-100">
             <div class="card-body">
               <h5 class="card-title">IT / Suporte</h5>
               <p class="card-text">Suporte N1/N2, Troubleshooting, Helpdesk</p>
@@ -63,7 +66,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow h-100 hover-card">
+          <div class="card shadow hover-card h-100">
             <div class="card-body">
               <h5 class="card-title">Sistemas</h5>
               <p class="card-text">Windows, Linux, macOS</p>
@@ -71,7 +74,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow h-100 hover-card">
+          <div class="card shadow hover-card h-100">
             <div class="card-body">
               <h5 class="card-title">Redes & Ferramentas</h5>
               <p class="card-text">Active Directory, DNS, DHCP, VPN, Jira, Zendesk, M365, Google Workspace</p>
@@ -83,12 +86,12 @@
   </section>
 
   <!-- Marketing & Vendas -->
-  <section id="marketing" class="py-5 bg-light">
+  <section id="marketing" class="py-5">
     <div class="container">
-      <h2 class="text-primary mb-4 text-center">Marketing & Vendas</h2>
+      <h2 class="text-center text-primary mb-4">Marketing & Vendas</h2>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card shadow h-100 hover-card">
+          <div class="card shadow hover-card h-100">
             <div class="card-body">
               <h5 class="card-title">SEO</h5>
               <p class="card-text">Otimização de motores de busca e campanhas digitais</p>
@@ -96,7 +99,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow h-100 hover-card">
+          <div class="card shadow hover-card h-100">
             <div class="card-body">
               <h5 class="card-title">Ferramentas</h5>
               <p class="card-text">Google Analytics, Google Ads, CRM</p>
@@ -104,7 +107,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow h-100 hover-card">
+          <div class="card shadow hover-card h-100">
             <div class="card-body">
               <h5 class="card-title">Vendas</h5>
               <p class="card-text">Estratégias B2B e B2C</p>
@@ -116,9 +119,9 @@
   </section>
 
   <!-- Projetos / Portfólio -->
-  <section id="projetos" class="py-5">
+  <section id="projetos" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-primary mb-4 text-center">Projetos / Portfólio</h2>
+      <h2 class="text-center text-primary mb-4">Projetos / Portfólio</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card shadow hover-card">
@@ -149,9 +152,9 @@
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="py-5 bg-light">
+  <section id="contacto" class="py-5">
     <div class="container">
-      <h2 class="text-primary mb-4 text-center">Contacto</h2>
+      <h2 class="text-center text-primary mb-4">Contacto</h2>
       <form action="https://formspree.io/f/xkoogqoj" method="POST" class="row g-3">
         <div class="col-md-6">
           <input type="text" class="form-control" name="name" placeholder="Nome" required>
@@ -194,6 +197,5 @@
       });
     });
   </script>
-
 </body>
 </html>
