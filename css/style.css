@@ -1,100 +1,20 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  background-color: #0f172a;
-  color: #e5e7eb;
-  scroll-behavior: smooth;
-}
-
-/* Header / Menu */
-.header {
-  position: fixed;
-  width: 100%;
-  background: #1e293b;
+/* Hero section */
+.masthead {
+  height: 100vh;
+  background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)), url('../images/logo.png') center/cover no-repeat;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 50px;
-  z-index: 1000;
+  text-align: center;
 }
 
-.logo {
-  max-width: 120px;
+/* Hover effect para cards */
+.hover-card:hover {
+  transform: translateY(-8px);
+  transition: transform 0.3s;
 }
 
-.header nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-.header nav ul li a {
-  color: #e5e7eb;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.header nav ul li a:hover {
-  color: #2563eb;
-}
-
-/* Secções */
+/* Scroll suave compensando navbar */
 section {
-  padding: 100px 20px 50px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-section h2 {
-  color: #2563eb;
-  margin-bottom: 20px;
-}
-
-/* Listas */
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  background: #1e293b;
-  margin-bottom: 12px;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-/* Formulário */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-input, textarea {
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-button {
-  padding: 12px;
-  background: #2563eb;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background: #1d4ed8;
-}
-
-#success-msg {
-  display: none;
-  color: #22c55e;
-  font-weight: bold;
-  margin-top: 10px;
+  scroll-margin-top: 80px;
 }
