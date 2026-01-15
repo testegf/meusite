@@ -1,46 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
   <meta charset="UTF-8">
-  <title>Em Manutenção site Joaquim Gonçalo Ferreira</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #eee;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-    .box {
-      max-width: 500px;
-      padding: 40px;
-      background: #1c1c1c;
-      border-radius: 8px;
-    }
-    h1 {
-      margin-bottom: 20px;
-      font-size: 28px;
-    }
-    p {
-      color: #aaa;
-      line-height: 1.6;
-    }
-  </style>
+  <title>Gonçalo | Portfólio Profissional</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <div class="box">
-    <h1>Site em manutenção Joaquim Gonçalo Ferreira</h1>
-    <p>
-      Este site está a ser preparado.<br>
-      Voltará a estar disponível em breve.
-    </p>
-  </div>
+  <!-- Header / Menu Fixo -->
+  <header class="header">
+    <img src="images/logo.png" alt="Logo Gonçalo IT" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#tecnicas">Técnicas</a></li>
+        <li><a href="#marketing">Marketing</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sobre mim -->
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Profissional multidisciplinar com experiência em IT, marketing e vendas, especializado em soluções tecnológicas, design 3D e otimização de processos.</p>
+  </section>
+
+  <!-- Competências Técnicas -->
+  <section id="tecnicas">
+    <h2>Competências Técnicas</h2>
+    <ul>
+      <li><strong>Suporte IT N1 / N2:</strong> Troubleshooting, Helpdesk</li>
+      <li><strong>Sistemas:</strong> Windows, Linux, macOS</li>
+      <li><strong>Redes:</strong> Active Directory, DNS, DHCP, VPN</li>
+      <li><strong>Ferramentas:</strong> Jira, Zendesk, Microsoft 365, Google Workspace</li>
+      <li><strong>Design & 3D:</strong> Adobe, FreeCAD</li>
+    </ul>
+  </section>
+
+  <!-- Marketing & Vendas -->
+  <section id="marketing">
+    <h2>Marketing & Vendas</h2>
+    <ul>
+      <li><strong>SEO:</strong> Otimização de motores de busca</li>
+      <li><strong>Campanhas:</strong> Planeamento e execução</li>
+      <li><strong>Ferramentas:</strong> Google Analytics, Google Ads, CRM</li>
+      <li><strong>Vendas:</strong> Estratégias B2B e B2C</li>
+    </ul>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos">
+    <h2>Projetos / Portfólio</h2>
+    <p>Exemplos de trabalhos, design 3D, modelação e iniciativas de marketing digital.</p>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="https://formspree.io/f/xkoogqoj" method="POST">
+      <input type="text" name="name" placeholder="Nome" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+      <p id="success-msg">Mensagem enviada com sucesso!</p>
+    </form>
+  </section>
+
+  <!-- Script Formspree -->
+  <script>
+    const form = document.querySelector('form');
+    const successMsg = document.getElementById('success-msg');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          successMsg.style.display = 'block';
+          form.reset();
+        } else {
+          alert("Ocorreu um erro. Tenta novamente.");
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
